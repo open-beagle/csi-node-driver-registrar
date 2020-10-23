@@ -5,7 +5,7 @@ FROM $BASE
 LABEL maintainers="Kubernetes Authors"
 LABEL description="CSI Node driver registrar"
 
-ARG binary=./.dist/csi-node-driver-registrar
+ARG binary=./dist/csi-node-driver-registrar
 
 COPY ${binary} csi-node-driver-registrar
 ENTRYPOINT ["/csi-node-driver-registrar"]
